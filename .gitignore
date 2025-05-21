@@ -1,7 +1,10 @@
-# Local .terraform directories
+# Local .terraform directories (contains the provider plugins, backend configs, and module caches)
+# Not nescessarily sensitive, but adds bloat.
 .terraform/
 
 # .tfstate files
+# tfstate files can contain logs that could hold crendentials or sensitive information
+# A team will need to share state files, but it must be done securely and not over git. (Lookup how to store state files depending on the provider)
 *.tfstate
 *.tfstate.*
 
@@ -13,6 +16,7 @@ crash.*.log
 # password, private keys, and other secrets. These should not be part of version 
 # control as they are data points which are potentially sensitive and subject 
 # to change depending on the environment.
+# Stores terraform variables. Might include sensitive information.
 *.tfvars
 *.tfvars.json
 
