@@ -19,7 +19,7 @@ crash.*.log
 # Stores terraform variables. Might include sensitive information.
 *.tfvars
 *.tfvars.json
-
+variable.tf
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
 override.tf
